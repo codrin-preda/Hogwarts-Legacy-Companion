@@ -1,5 +1,7 @@
 # Hogwarts-Legacy-Companion
-WAD Project 2023 by George-Codrin Preda and Maria-Roxana Sibiceanu from 1231B
+WAD Project 2023 
+
+Team Members:George-Codrin Preda(george_codrin.preda@stud.fils.upb.ro) & Maria-Roxana Sibiceanu (maria.sibiceanu@stud.fils.upb.ro)
 
 Welcome to the Hogwarts Legacy companion web application! This application is designed to enhance your experience playing Hogwarts Legacy by providing you with additional features and resources.
 
