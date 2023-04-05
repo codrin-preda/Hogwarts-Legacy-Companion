@@ -3,6 +3,7 @@ WAD Project 2023
 
 Team Members:George-Codrin Preda(george_codrin.preda@stud.fils.upb.ro) & Maria-Roxana Sibiceanu (maria.sibiceanu@stud.fils.upb.ro)
 Figma Link:https://www.figma.com/file/pQNKmDeT1NJtQONjZU984o/Hogwarts-Legacy-Companion?node-id=1%3A3&t=rWblaKdSK6yX5yNO-1
+Trello Link:https://trello.com/invite/b/rrdBohSs/ATTI8ead0a17f645a3f2e2e02e84bd7a641d962D3BB2/hogwarts-legacy-comapanion
 
 Welcome to the Hogwarts Legacy companion web application! This application is designed to enhance your experience playing Hogwarts Legacy by providing you with additional features and resources.
 
