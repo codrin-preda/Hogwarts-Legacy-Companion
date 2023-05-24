@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Y'er a wizard,Harry</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+          background-image: url('pic/login');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+</head>
+
+
+<body>
+	<header class="sticky">
+		<a href="#" class="logo">Y'er a wizard,Harry</a>
+		<ul class="nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">About</a></li>
+			<li><a href="index.html">Games</a></li>
+            <li><a href="forum.html">Forum</a></li>
+			<li><a href="https://www.twitch.tv/directory/game/Hogwarts%20Legacy">Streamers</a></li>
+			<li><a href="index.html">Contact</a></li>
+		</ul>
+		<div class="action">
+			<div class="searchBox">
+				<a href="#"><i class='bx bx-search-alt'></i></a>
+				<input type="text" placeholder="Search wizard">
+			</div>
+		</div>
+		<div class="toggleMenu" onclick="toggleMenu();"></div>
+	</header>
+   
+    <div class="content-container">
+        <div class="form-container">
+            <div class="form-header-container">
+                <h2 id="form-header">Welcome Wizards</h2>
+            </div>
+
+            <!-- Registration/Login form -->
+                <div class="form-content-container">
+                    <div class="form-content-inner-container">
+                    <input type="text" id="full-name" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="text" id="house" placeholder="What is your House?">
+                
+                    <input type="text" id="wand-type" placeholder="Wand Type">
+                    <input type="text" id="pet-name" placeholder="Name of Your Pet">
+                    <input type="date" id="start-date" placeholder="Start Date">
+                
+                    <select id="favorite-house">
+                        <option value="" disabled selected>Select your Favorite House</option>
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Slytherin">Slytherin</option>
+                    </select>
+                
+                    <input type="text" id="favorite-character" placeholder="Favorite Movie Character">
+                
+                    <input type="number" id="spells-unlocked" placeholder="Number of Spells Unlocked">
+                    <input type="number" id="worlds-unlocked" placeholder="Number of Worlds Unlocked">
+                    <input type="number" id="days-played" placeholder="Days Played">
+                    <input type="number" id="achievements-unlocked" placeholder="Number of Achievements Unlocked">
+                
+                    <div class="button-container">
+                        <button onclick="login()">Login</button>
+                        <button onclick="register()">Register</button>
+                    </div>
+                    </div>
+                </div>
+  
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+    <!--Scripts loaded after firebase references-->
+    <script src="login.js"></script>
+</body>
+ 
+
+</html>

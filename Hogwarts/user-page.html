@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y'er a wizard, Harry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+          background-image: url('pic/login');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky">
+        <a href="#" class="logo">Y'er a wizard, Harry</a>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="https://www.twitch.tv/directory/game/Hogwarts%20Legacy">Streamers</a></li>
+            <li><a href="user-page.html">MyPage</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <a href="#"><i class='bx bx-search-alt'></i></a>
+                <input type="text" placeholder="Search wizard">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+    <div id="userContainer">
+        <span id="username"></span>
+       
+        <div id="housePictureContainer"></div>
+        <button id="logoutBtn">Logout</button>
+        <div>
+            <p>Email:</p>
+            <p>Full Name:</p>
+            <p>House:</p>
+            <p>Wand Type:</p>
+            <p>Pet Name:</p>
+            <p>Start Date:</p>
+            <p>Favorite House:</p>
+            <p>Favorite Character:</p>
+            <p>Spells Unlocked: <input type="number" id="spellsUnlockedInput"></p>
+            <p>Worlds Unlocked: <input type="number" id="worldsUnlockedInput"></p>
+            <p>Days Played: <input type="number" id="daysPlayedInput"></p>
+            <p>Achievements Unlocked: <input type="number" id="achievementsUnlockedInput"></p>
+            <button id="updateStatsButton">Update Stats</button>
+        
+            
+        </div> 
+       
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="login.js"></script>
+    <script src="user-page.js"></script>
+</body>
+</html>

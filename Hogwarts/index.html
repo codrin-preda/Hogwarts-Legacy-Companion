@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Y'er a wizard,Harry</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<header class="sticky">
+		<a href="#" class="logo">Y'er a wizard,Harry</a>
+		<ul class="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#game">Games</a></li>
+			<li><a href="forum.html">Forum</a></li>
+			<li><a href="news.html">News</a></li>			
+			<li><a href="users.html">Users</a></li>
+			<li><a href="https://www.twitch.tv/directory/game/Hogwarts%20Legacy">Streamers</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="user-page.html">MyPage</a></li>
+		</ul>
+		<div class="action">
+			<div class="searchBox">
+				<a href="#"><i class='bx bx-search-alt'></i></a>
+				<input type="text" placeholder="Search wizard">
+			</div>
+		</div>
+		<div class="toggleMenu" onclick="toggleMenu();"></div>
+	</header>
+
+	<!--Home Banner-->
+	<div class="banner" id="home">
+		<div class="bg">
+			<div class="content">
+				<h2>A New Home for<br>
+				Hogwarts' Wizards</h2>
+				<p> Your ultimate guide to everything related to the upcoming Hogwarts Legacy game! Our goal is to provide you with the latest news, updates, and tips on the game, as well as detailed information on characters, spells, items, and more.</p>
+				<a href="login.html" class="btn">Join Us Wizards</a>
+			</div>
+			<img src="pic/hoggy.webp">
+		</div>
+	</div>
+     
+
+	<!--About-->
+	<div class="about" id="about">
+		<div class="contentBx">
+           <h2>About us</h2>
+		   <p>Our team of dedicated fans and game enthusiasts are constantly working to ensure that our website is up-to-date and accurate, so that you can get the most out of your Hogwarts Legacy experience. Whether you're a seasoned gamer or a new player, we've got something for everyone.</p>
+	       <p>If you have any questions or suggestions for our website, please don't hesitate to contact us. We're always happy to hear from our fellow Hogwarts fans!</p>
+	       <p>Thank you for choosing Hogwarts Game Companion as your go-to resource for all things Hogwarts Legacy. Let's explore the magical world of Harry Potter together!</p>
+		   <a href="#">Read More</a>
+		</div>
+		<img src="pic/about.png">
+	</div>
+
+	<!--Something about the game-->
+	<div class="game" id="game">
+		<h2>Live the Unwritten</h2>
+		<ul>
+			<li class="list active" data-filter="all">All</li>
+			<li class="list" data-filter="op">Open World</li>
+			<li class="list" data-filter="spell">Spells</li>
+		</ul>
+		<div class="cardBx">
+			<div class="card" data-item="op">
+				<img src="pic/hg.jpg">
+				<div class="content">
+					<h4>Hogwarts</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>50%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Category:Hamlets">See more</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" data-item="op">
+				<img src="pic/hm.jpg">
+				<div class="content">
+					<h4>Hogsmeade</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>10%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Category:Hamlets">See more</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" data-item="op">
+				<img src="pic/ff.jpg">
+				<div class="content">
+					<h4>Forbidden Forest</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>30%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Category:Hamlets">See more</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card" data-item="op">
+				<img src="pic/az.jpg">
+				<div class="content">
+					<h4>Azkaban</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Azkaban">See more</a>
+					</div>
+				</div>
+			</div>
+           
+			<div class="card" data-item="spell">
+				<img src="pic/accio.png">
+				<div class="content">
+					<h4>Accio</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Accio">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/alter.png">
+				<div class="content">
+					<h4>Altering spell</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Altering_Spell">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/arresto.png">
+				<div class="content">
+					<h4>Arresto Momentum</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Arresto_Momentum">See more</a>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="card" data-item="spell">
+				<img src="pic/avada.png">
+				<div class="content">
+					<h4>Avada Kedavra</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Avada_Kedavra">See more</a>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="card" data-item="spell">
+				<img src="pic/bombarda.png">
+				<div class="content">
+					<h4>Bombarda</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Bombarda">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/conj.png">
+				<div class="content">
+					<h4>Conjuring Spell</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Conjuring_Spell">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/crucio.png">
+				<div class="content">
+					<h4>Crucio</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Crucio">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/descendo.png">
+				<div class="content">
+					<h4>Descendo</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Descendo">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/depulso.png">
+				<div class="content">
+					<h4>Depulso</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Depulso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/diffindo.png">
+				<div class="content">
+					<h4>Diffindo</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Diffindo">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/dis.png">
+				<div class="content">
+					<h4>Disillusionment</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Disillusionment">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/evanesco.png">
+				<div class="content">
+					<h4>Evanesco</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Evanesco">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/expelliarmus.png">
+				<div class="content">
+					<h4>Expelliarmus</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Expelliarmus">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/flipendo.png">
+				<div class="content">
+					<h4>Flipendo</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Flipendo">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/imperio.png">
+				<div class="content">
+					<h4>Imperio</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Imperio">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/incendio.png">
+				<div class="content">
+					<h4>Incendio</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Incendio">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/levioso.png">
+				<div class="content">
+					<h4>Levioso</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/lumos.png">
+				<div class="content">
+					<h4>Lumos</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/petrificus totalus.png">
+				<div class="content">
+					<h4>Petrificus totalus</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/protego.png">
+				<div class="content">
+					<h4>Protego</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/reparo.png">
+				<div class="content">
+					<h4>Reparo</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/revelio.png">
+				<div class="content">
+					<h4>Revelio</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/stupefy.png">
+				<div class="content">
+					<h4>Stupefy</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/transf.png">
+				<div class="content">
+					<h4>Transformation</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="card" data-item="spell">
+				<img src="pic/wingardium.png">
+				<div class="content">
+					<h4>Wingardium leviosa</h4>
+					<div class="progress-line"><span></span></div>
+					<div class="info">
+						<p>Difficulty<br><span>60%</span></p>
+						<a href="https://hogwarts-legacy.fandom.com/wiki/Levioso">See more</a>
+					</div>
+				</div>
+			</div> 
+
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact" id="contact">
+		<img src="pic/contact.jpg">
+		<div class="form">
+			<h1>Contact Us</h1>
+			<div class="inputBx">
+				<p>Enter Name</p>
+				<input type="text" placeholder="Full Name">
+			</div>
+
+			<div class="inputBx">
+				<p>Enter Email</p>
+				<input type="text" placeholder="Valid Email">
+			</div>
+
+			<div class="inputBx">
+				<p>Message</p>
+				<textarea placeholder="Type here..."></textarea>
+			</div>
+
+			<div class="inputBx">
+				<input type="Submit" name="Submit">
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--Footer-->
+
+	<footer>
+		<div class="info">
+			<a href="#" class="logo">Y'er a wizard, Harry</a>
+			<p><i class='bx bx-copyright' ></i>2023 All Rights Reserved</p>
+			<ul>
+				<li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+				<li><a href="#"><i class='bx bxl-discord-alt' ></i></a></li>
+				<li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+				<li><a href="#"><i class='bx bxl-facebook-square' ></i></a></li>
+				<li><a href=""><i class='bx bxl-youtube' ></i></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="index.js"></script>
+</body>
+</html>

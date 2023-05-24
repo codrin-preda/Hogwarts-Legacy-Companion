@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Y'er a wizard,Harry</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+          background-image: url('pic/login');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+</head>
+
+
+<body>
+	<header class="sticky">
+		<a href="#" class="logo">Y'er a wizard,Harry</a>
+		<ul class="nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="https://www.twitch.tv/directory/game/Hogwarts%20Legacy">Streamers</a></li>
+			<li><a href="user-page.html">MyPage</a></li>
+		</ul>
+		<div class="action">
+			<div class="searchBox">
+				<a href="#"><i class='bx bx-search-alt'></i></a>
+				<input type="text" placeholder="Search wizard">
+			</div>
+		</div>
+		<div class="toggleMenu" onclick="toggleMenu();"></div>
+	</header>
+   
+
+    <!-- Forum page -->
+    <div id="forumContainer">
+        <h2>Forum</h2>
+        <div id="postFormContainer">
+          <textarea id="postInput" placeholder="Write your post"></textarea>
+          <button id="submitBtn">Submit</button>
+        </div>
+        <div id="postsContainer"></div>
+      </div>
+      
+  
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+    <script src="login.js"></script>
+    <script src="forum.js"></script>
+
+</body>
+ 
+
+</html>
